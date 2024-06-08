@@ -15,6 +15,9 @@ require("dotenv").config({
 module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
     {
       resolve: "gatsby-source-sanity",
        options: {

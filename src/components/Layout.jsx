@@ -1,10 +1,11 @@
 import React from 'react'
 import { Container } from './Layout.styles'
+import { Menu } from './Menu'
 
 const Layout = ({children}) => {
   return (
     <Container>
-      Some nav
+   <Menu/>
       {children}
     </Container>
     

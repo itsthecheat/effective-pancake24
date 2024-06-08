@@ -3,7 +3,7 @@ import { SEO } from "../components/seo"
 
 const AboutPage = () => {
   return (
-    <div>about</div>
+    <div>Wooha!</div>
   )
 }
 export const Head = () => (
