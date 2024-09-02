@@ -1,0 +1,14 @@
+const myHeaders = new Headers();
+myHeaders.append("Api-Token", "4d9e18ea346b788f3a76946c849004055d7f9b3c440a5ec24d0d669f02d14cb5ab49158b");
+myHeaders.append("Cookie", "PHPSESSID=5af6c1ca283e5a686df8e5379f85ae97; em_acp_globalauth_cookie=4d9c157f-1388-458f-9fa6-f035e0b70a15");
+
+const requestOptions = {
+  method: "GET",
+  headers: myHeaders,
+  redirect: "follow"
+};
+
+fetch("https://activecampaign1697636055.api-us1.com/api/3/contacts", requestOptions)
+  .then((response) => response.text())
+  .then((result) => console.log(result))
+  .catch((error) => console.error(error));
